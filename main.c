@@ -5,14 +5,14 @@
 #include <unistd.h>
 #include <fcntl.h>
 
-int binRunner(char *, char *, int, int, char **);
+int binRunner(char *, char *, char *, char *, char **);
 
 int main(int argc, char *argv[], char *envp[]){
 
     return 0;
 }
 
-int binRunner(char *name, char *path, int in_file, int out_file, char *envp[]){
+int binRunner(char *name, char *path, char *in_file, char *out_file, char *envp[]){
 
     int pid;
     int in_fd, out_fd;
