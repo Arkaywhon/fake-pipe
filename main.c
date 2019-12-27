@@ -9,6 +9,11 @@ int binRunner(char *, char *, char *, char *, char **);
 
 int main(int argc, char *argv[], char *envp[]){
 
+    printf("This program simulates a pipe between the ls and wc command.\n");
+    printf("Faking: ls | wc\n");
+    binRunner("ls", "/bin/ls", NULL, "./temp.txt", envp);
+    binRunner("wc", "/usr/bin/wc", "./temp.txt", NULL, envp);
+
     return 0;
 }
 
